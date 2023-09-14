@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sitio Web - CSS Grid</title>
+    <link rel="icon" href="img/reshot-icon-stereometry-X4D6MYVKLB.ico">
+    <link rel="stylesheet" href="img/css/all.min.css">
+</head>
+<style>
+    body{
+        background:url("img/Fondo.png");
+        background-size:cover;
+        background-position: center center;
+    }
+</style>
+<body>
+    <header id="Inicio">
+        <div class = "container">
+            <img class="logo" src="img/css.ico" alt="Logo">
+            <div class="Letras"><h1 >CSS <br> GRID</h1>
+                <p class="Eslogan"><i>Aprendiendo de la mano contigo</i> </p>
+            </div>
+        </div>
+
+        <!-- Estilos para el logo y el eslogan  -->
+
+        <style>
+            .container{
+                display: flex;
+            }
+        
+        
+        .Letras{
+            margin-top:3%;
+            padding: 1%;
+            color: #fff;
+            }
+            
+            .Eslogan{
+                margin-top: 0px;
+                color: #fff;
+            }
+
+            .logo{
+                width: 100px;
+                height: 100px;
+                margin-top: 3%;
+                margin-left: 3.1%;
+            }
+            .header{
+                position: relative;
+                overflow: visible;
+
+            }
+
+            </style>
+
+
+
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#Inicio"><span class="c1"><i class="fas fa-home"></i></span>  Inicio </a></li>
+            <li><a href="#Tema"><span class="c2"><i class="fas fa-list"></i></span>  Tema </a></li>
+            <li><a href="#Mockup"><span class="c3"><i class="far fa-play-circle"></i> </span>  Mockup </a></li>
+            <li><a href="#Acerca_de"><span class="c4"><i class="fas fa-address-card"></i> </span>  Acerca de</a></li>
+        </ul>
+    </nav>
+    
+    
+    <!-- Estilos para la barra de navegación  -->
+    
+    <style>
+    *{
+    margin: 0;   
+    padding: 0;
+    color: #fff;
+    }
+    
+    
+    .nav{
+        position:sticky;
+        top:0;
+        left: 5.001%;
+        outline: 1px solid #000;
+    }
+    nav{    
+    width: 90%;
+    max-width: 100%;
+    margin-top: 1%;
+    }
+    
+    nav ul{
+    list-style: none;
+    }
+    
+    nav > ul{
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    background: #000;
+    position: relative;
+    }
+    
+    nav > ul li{
+    display: table-cell;
+    }
+    
+    nav > ul li a{ 
+    color: #fff;
+    display: block;
+    line-height: 20px;
+    padding: 12px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    }
+    
+    
+    nav > ul > li a span{
+    
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top:-55px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    }
+    
+    nav > ul > li a span {
+    display: block;
+    line-height: 43px;
+    }
+    
+    nav > ul > li a:hover > span{
+    top:0;
+    }
+    
+     nav ul li a .c1{
+    background: #0e5061;
+    }
+     nav ul li a .c2{
+    background: #579c96;
+    }
+     nav ul li a .c3{
+    background: #991919;
+    }
+    nav ul li a .c4{
+    background: #263c6b;
+    
+    }
+    
+    </style>
+
+    <!-- Primera parte de la página: La introducción  -->
+    
+    <section id="">
+        <div class="container1">
+            <div class="description-row1">
+                <div class="description-box1">
+                   <center> <img  class="banner" src="img/Negro y Blanco Moderno Vintage Farmacia Reapertura Comercial Horizontal Cartel.png" alt=""></center>
+                    <center><p><h5><i><a href="https://www.canva.com/design/DAEyd7fQsqY/w4WU7Fbi5yslk95DltQT5g/edit?utm_content=DAEyd7fQsqY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Imagen de autoria propia</a> </i></h5></p></center>
+                </div>
+                
+            </div>
+
+            <div class="descirption-row">
+                <div class="description-box">
+                    <img src="img/web-design.ico" alt="">
+                    <h4>Description</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque assumenda maiores neque nobis adipisci odio ullam fugit, voluptatibus esse dolorum in, est aliquid, illo perspiciatis libero omnis fugiat ipsa!</p>
+                </div>
+            </div>
+            <div class="description-row">
+                <div class="description-box">
+                    <img src="img/contactos.ico" alt="">
+                    <h4>Description</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque assumenda maiores neque nobis adipisci odio ullam fugit, voluptatibus esse dolorum in, est aliquid, illo perspiciatis libero omnis fugiat ipsa!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Estilos de la sección 1  -->
+     <style>
+
+        
+        .description-box{
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner{
+            width: 90%;
+            height: 500%;
+            border-bottom-left-radius:2% ;
+            border-bottom-right-radius: 2%;
+
+        }
+     </style>
+
+<!-- Segunda parte de la página: Tema abordado  -->
+
+    <section id="Tema">
+        <div class="container">
+            <h4>Personas referentes en este tema</h4>
+            <img src="img/hombre.ico" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores explicabo placeat molestias perferendis. Unde cumque nesciunt est maiores dicta voluptas.</p>
+            <p>jack doe</p>
+            <p>NY, Ny</p>
+        </div>
+    </section>
+
+    <section id="features">
+
+        <div class="container2">
+            <div class="features-row">
+                <div class="features-box">
+                    <img src="img/codificacion.ico" alt="">
+                    <h4>Feature</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis corrupti quia facilis reiciendis maiores voluptatibus sint, quam optio voluptatem blanditiis.</p>
+
+                </div>
+                
+                <div class="features-box">
+                    <img src="img/html-5.ico" alt="">
+                    <h4>Feature</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis corrupti quia facilis reiciendis maiores voluptatibus sint, quam optio voluptatem blanditiis.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Tercera parte de la página: Mockup  -->
+
+    <section id="Mockup">
+        <div class="features-box">
+            <img src="img/themes.ico" alt="Grid">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis corrupti quia facilis reiciendis maiores voluptatibus sint, quam optio voluptatem blanditiis.</p>
+
+        </div>
+        <div class="container3">
+             <div class="Mockup">
+                <img src="img/One page.drawio.png" alt="Mockup - One Page"><br>
+                <p><h5>Mockup - One Page</h5></p>
+             </div>
+            
+        </div>
+
+        <!--Estilos del Mockup-->
+
+        <style>
+            .Mockup{
+                margin-left: 29%;
+            } 
+        </style>
+    </section>
+
+<!-- Cuarta parte de la página: Acerca de   -->
+
+    <section id="Acerca_de">
+        <div>
+
+        </div>
+    </section>
+    
+    <footer id="main-footer">
+        <p>09.2023</p>
+    </footer>
+
+</body>
+</html>
